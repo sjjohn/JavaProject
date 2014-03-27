@@ -1,6 +1,57 @@
-*.class
+package project;
 
-# Package Files #
-*.jar
-*.war
-*.ear
+
+public class Project 
+{
+
+		int employeeID = 0; //initializes the employees ID
+		String territory = ""; //initializes which territory regional or national 
+		int homeCity = 0; //initializes the integer value of HomeCity
+		int salesValue = 0; //initializes the sales value as an integer
+		int sales = 0; //initializes the sales value to zero
+		int prospects = 0; //initializes prospects as an integer
+		int salary = 0; //initializes salary variable to zero
+		String startDate = ""; //initializes the start date as a string
+		String name = ""; //initializes the variable name as a string
+		
+		//setting a constructor with the new variables
+		public Project(int newEmployeeID, String newTerritory, int newHomeCity, int newSalesValue, int newSales, int newProspects, int newSalary, String newStartDate, String newName){
+			employeeID = newEmployeeID;
+			territory = newTerritory;
+			homeCity = newHomeCity;
+			salesValue = newSalesValue;
+			sales = newSales;
+			prospects = newProspects;
+			salary = newSalary;
+			startDate = newStartDate;
+			name = newName;
+		}
+		//mutator methods
+		public void setEmployeeID(int newEmployeeID){ //mutator sets for a new employee ID
+			employeeID = newEmployeeID;
+		}
+		public void setTerritory(String newTerritory){ //mutator sets for a new territory
+			territory = newTerritory;
+		}
+		public void setHomeCity(int newHomeCity){ //mutator sets for a new home city
+			homeCity = newHomeCity;
+		}
+		public void setSalesValue(int newSalesValue){ //mutator sets for a new sales value
+			salesValue = newSalesValue;
+		}
+		public void setSales(int newSales){ //mutator sets for new sales
+			sales = newSales;
+		}
+		public void setProspects(int newProspects){ //mutator sets for new prospects
+			prospects = newProspects;
+		}
+		public void setSalary(int newSalary){ //mutator sets for new salary
+			salary = newSalary;
+		}
+		public void setStartDate(String newStartDate){ //mutator sets for a new start date
+			startDate = newStartDate;
+		}public void setName(String newName){ //mutator sets for a new name
+			name = newName;
+		}
+
+}
